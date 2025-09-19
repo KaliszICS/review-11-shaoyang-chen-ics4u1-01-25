@@ -4,10 +4,7 @@ public class PracticeProblem {
 
 	}
 	public static int[] createIntArray(){
-        int[] arr = new int[4];
-        for (int i = 0; i < 5; i++) {
-            arr[i] = i+1;
-        }
+        int[] arr = {1,2,3,4,5};
         return arr;
     }
     public static String[] createArray(String str1, String str2, String str3, String str4){
