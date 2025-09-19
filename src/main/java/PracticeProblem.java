@@ -23,8 +23,12 @@ public class PracticeProblem {
         return -1;
     }
     public static int findThirdValue(String value, String[] arr){
+        int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if(arr[i].equals(value)){
+                count++;
+            }
+            if (count == 3) {
                 return i;
             }
         }
