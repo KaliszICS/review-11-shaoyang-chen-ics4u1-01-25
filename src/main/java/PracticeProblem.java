@@ -3,6 +3,29 @@ public class PracticeProblem {
 	public static void main(String args[]) {
 
 	}
-
+	public static void createIntArray(int[] arr){
+        for (int i = 0; i < 5; i++) {
+            arr[i] = i+1;
+        }
+    }
+    public static void createArray(String str1, String str2, String str3, String str4){
+        String[] arr1 = new String[]{str1, str2, str3, str4};
+    }
+    public static int findValue(int value, int  [] arr){
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] == value){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static int findThirdValue(String value, String[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i].equals(value)){
+                return i;
+            }
+        }
+        return -1;
+    }
 
 }
