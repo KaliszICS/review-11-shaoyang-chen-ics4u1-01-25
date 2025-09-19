@@ -3,13 +3,16 @@ public class PracticeProblem {
 	public static void main(String args[]) {
 
 	}
-	public static void createIntArray(int[] arr){
+	public static int[] createIntArray(){
+        int[] arr = new int[4];
         for (int i = 0; i < 5; i++) {
             arr[i] = i+1;
         }
+        return arr;
     }
-    public static void createArray(String str1, String str2, String str3, String str4){
+    public static String[] createArray(String str1, String str2, String str3, String str4){
         String[] arr1 = new String[]{str1, str2, str3, str4};
+        return arr1;
     }
     public static int findValue(int value, int  [] arr){
         for (int i = 0; i < arr.length; i++) {
